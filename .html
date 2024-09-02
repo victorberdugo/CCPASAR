@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasarela de Pago</title>
+    <link rel="stylesheet" href="payment-styles.css">
+</head>
+<body>
+    <div class="payment-container">
+        <div class="payment-box">
+            <h1>Pago</h1>
+            <form action="/payment" method="post">
+                <div class="textbox">
+                    <label for="card-number">Número de tarjeta</label>
+                    <input type="text" id="card-number" name="card_number" placeholder="1234 5678 1234 5678" required>
+                </div>
+                <div class="textbox">
+                    <label for="expiry-date">Fecha de expiración</label>
+                    <input type="text" id="expiry-date" name="expiry_date" placeholder="MM/AA" required>
+                </div>
+                <div class="textbox">
+                    <label for="cvc">CVC</label>
+                    <input type="text" id="cvc" name="cvc" placeholder="123" required>
+                </div>
+                <button type="submit">Pagar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
